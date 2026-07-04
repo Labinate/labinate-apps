@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PDF or Word for Your Resume? What to Send, and When (2026)</title>
+<meta name="description" content="Should a resume be a PDF or a Word document? PDF preserves your layout and modern ATS read it fine — send .docx only when the posting asks. How to decide, and how to export a parser-safe PDF. Free resume builder included.">
+<meta name="keywords" content="resume pdf or word, should a resume be pdf, resume file format, pdf vs word resume, resume docx or pdf, best file format for resume, ats resume file type">
+<meta name="theme-color" content="#111827">
+<link rel="canonical" href="https://labinate.github.io/labinate-apps/guides/resume-pdf-or-word/">
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Labinate">
+<meta property="og:title" content="PDF or Word for Your Resume? What to Send, and When">
+<meta property="og:description" content="PDF preserves your layout and modern ATS read it fine. Send Word only when the posting asks. How to decide — and export a parser-safe PDF.">
+<meta property="og:url" content="https://labinate.github.io/labinate-apps/guides/resume-pdf-or-word/">
+<meta property="og:image" content="https://labinate.github.io/labinate-apps/markresume/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PDF or Word for your resume? Here's the rule">
+<meta name="twitter:description" content="PDF by default, Word only when asked — and why the file itself matters less than whether the text is machine-readable.">
+<meta name="twitter:image" content="https://labinate.github.io/labinate-apps/markresume/og.png">
+<!-- Structured data: Article -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"PDF or Word for Your Resume? What to Send, and When",
+  "description":"Whether to send a resume as a PDF or a Word document, why PDF is the safe default, when a job posting's .docx request should override it, and how to make sure whichever file you send is machine-readable.",
+  "author":{"@type":"Organization","name":"Labinate"},
+  "publisher":{"@type":"Organization","name":"Labinate","url":"https://labinate.com"},
+  "datePublished":"2026-07-05",
+  "dateModified":"2026-07-05",
+  "mainEntityOfPage":"https://labinate.github.io/labinate-apps/guides/resume-pdf-or-word/",
+  "image":"https://labinate.github.io/labinate-apps/markresume/og.png"
+}
+</script>
+<!-- Structured data: Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Labinate","item":"https://labinate.github.io/labinate-apps/"},
+    {"@type":"ListItem","position":2,"name":"Guides","item":"https://labinate.github.io/labinate-apps/guides/"},
+    {"@type":"ListItem","position":3,"name":"PDF or Word for Your Resume"}
+  ]
+}
+</script>
+<!-- Structured data: FAQ (rich-snippet eligible) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Should a resume be a PDF or a Word document?","acceptedAnswer":{"@type":"Answer","text":"Send a PDF by default. A PDF locks your layout so it looks the same on every device, and modern applicant tracking systems read text-based PDFs without trouble. The one exception is when a job posting or recruiter explicitly asks for a Word document (.docx) — then send Word, because they've told you their system needs it."}},
+    {"@type":"Question","name":"Can applicant tracking systems read PDF resumes?","acceptedAnswer":{"@type":"Answer","text":"Yes. The long-standing warning that 'ATS can't read PDFs' is out of date — today's systems parse text-based PDFs reliably. What actually breaks parsing is the layout, not the file type: tables, text boxes, multiple columns, and text saved as an image will confuse a parser whether it's a PDF or a Word file. Export a clean, single-column PDF with real, selectable text and it reads fine."}},
+    {"@type":"Question","name":"When should I send a Word resume instead of a PDF?","acceptedAnswer":{"@type":"Answer","text":"Send Word (.docx) whenever the application explicitly asks for it. Some older ATS and many recruiting agencies request Word because they re-format or annotate your resume before passing it on. If the posting names a format, follow it exactly — an ignored instruction is an easy reason to be screened out."}},
+    {"@type":"Question","name":"Why does my resume look different after I upload it?","acceptedAnswer":{"@type":"Answer","text":"A Word document reflows based on the reader's fonts, version, and page settings, so margins shift and lines break in new places on someone else's machine. A PDF prevents that — it renders identically everywhere. If preserving your exact layout matters (and it usually does), that's the strongest reason to send PDF unless told otherwise."}}
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#f7f8fa;--panel:#fff;--ink:#0f172a;--muted:#5b6472;--faint:#8b95a5;
+  --line:#e7eaef;--brand:#2563eb;--pill:#eef2f7;--pillink:#475569;
+  --feat-bg:#0f172a;--feat-ink:#e2e8f0;--feat-accent:#34d399;--ok:#059669;
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#0b0f17;--panel:#131a26;--ink:#f1f5f9;--muted:#9aa6b6;--faint:#6b7688;
+  --line:#212a38;--brand:#60a5fa;--pill:#1c2635;--pillink:#a9b6c8;--ok:#34d399;
+}}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);
+  margin:0;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 1.2rem}
+a{color:var(--brand)}
+.crumb{font-size:.82rem;color:var(--faint);padding-top:2rem}
+.crumb a{color:var(--faint);text-decoration:none}
+.crumb a:hover{color:var(--brand)}
+header{padding:1rem 0 1.4rem;border-bottom:1px solid var(--line)}
+.brand{font-size:.82rem;letter-spacing:.22em;color:var(--faint);font-weight:700;text-transform:uppercase}
+h1{font-size:2.15rem;line-height:1.12;margin:.6rem 0 .5rem;letter-spacing:-.02em}
+.lead{font-size:1.1rem;color:var(--muted);margin:.4rem 0 0}
+.meta{font-size:.8rem;color:var(--faint);margin-top:.9rem}
+h2{font-size:1.35rem;margin:2.2rem 0 .6rem;letter-spacing:-.01em}
+h3{font-size:1.05rem;margin:1.5rem 0 .3rem}
+p{margin:.7rem 0}
+ul,ol{padding-left:1.25rem}
+li{margin:.35rem 0}
+.grp{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--brand);
+  border-radius:10px;padding:.9rem 1.1rem;margin:.9rem 0}
+.grp .role{font-size:.9rem;color:var(--ink);font-weight:700;margin-bottom:.2rem}
+.grp p{margin:.2rem 0;color:var(--muted)}
+.grp .fix{color:var(--ok);font-weight:600}
+.cta{display:block;text-decoration:none;background:var(--feat-bg);color:var(--feat-ink);
+  border-radius:16px;padding:1.5rem 1.6rem;margin:1.8rem 0}
+.cta .k{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--feat-accent);font-weight:700}
+.cta .t{font-size:1.28rem;font-weight:700;margin:.35rem 0 .2rem;color:#fff}
+.cta .d{font-size:.98rem;color:var(--feat-ink);opacity:.85}
+.cta .go{display:inline-block;margin-top:.9rem;font-size:.9rem;font-weight:700;color:#fff;
+  background:var(--brand);border-radius:999px;padding:.55rem 1.1rem}
+.callout{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem;margin:1.3rem 0}
+.callout strong{color:var(--ink)}
+.faq h3{margin-top:1.4rem}
+.ex{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;margin:.7rem 0;font-size:.95rem}
+.ex .b{color:var(--faint);text-decoration:line-through}
+.ex .a{color:var(--ink);font-weight:600}
+footer{border-top:1px solid var(--line);margin-top:2.6rem;padding:1.6rem 0 3rem;font-size:.85rem;color:var(--faint)}
+footer a{color:var(--faint)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="crumb"><a href="../../">Labinate</a> › <a href="../">Guides</a> › PDF or Word</nav>
+  <header>
+    <div class="brand">Labinate · Resume Guides</div>
+    <h1>PDF or Word for your resume? What to send, and when</h1>
+    <p class="lead">The short version: send a PDF unless the posting asks for Word. But the file type matters far less than most advice suggests — what actually gets a resume screened out is a layout the parser can't read, in either format.</p>
+    <div class="meta">Updated July 2026 · ~5 min read · by Labinate</div>
+  </header>
+
+  <p>It's one of the most-asked resume questions, and it's been muddied by a myth that refuses to die: "an ATS can't read a PDF, so always send Word." That advice was reasonable a decade ago. It isn't now. Here's the current reality, the one real exception, and the thing that actually determines whether software can read your resume at all.</p>
+
+  <a class="cta" href="../../markresume/">
+    <div class="k">Free tool · no sign-up</div>
+    <div class="t">Export a parser-safe PDF in one click</div>
+    <div class="d">MarkResume builds your resume as real, selectable text in a single-column, ATS-friendly layout, then exports a clean PDF that reads correctly everywhere. Live preview, free, no account.</div>
+    <span class="go">Open MarkResume →</span>
+  </a>
+
+  <h2>The default answer: PDF</h2>
+  <p>For most applications, PDF is the right choice, for two reasons:</p>
+  <div class="grp">
+    <div class="role">It preserves your layout</div>
+    <p>A PDF renders identically on every device and in every reader. A Word file reflows based on the recipient's fonts and settings — your careful spacing can collapse, and a one-page resume can spill onto two.</p>
+  </div>
+  <div class="grp">
+    <div class="role">Modern ATS read it fine</div>
+    <p>Today's applicant tracking systems parse text-based PDFs without trouble. The "PDFs break the ATS" warning is out of date; a clean PDF with real text is a safe, standard submission.</p>
+  </div>
+
+  <h2>The one real exception: when they ask for Word</h2>
+  <p>If a job posting, application form, or recruiter explicitly requests a <strong>.docx</strong> file, send Word. Full stop. Some older systems and many staffing agencies re-format or annotate your resume before it reaches the hiring manager, and they need an editable file to do it. Ignoring a stated format instruction is one of the easiest, most avoidable reasons to get filtered out — so read the posting and follow it exactly.</p>
+
+  <div class="callout"><strong>Rule of thumb.</strong> No format specified → send PDF. Format specified → send exactly that. When a recruiter emails asking for "your resume in Word," they mean it — reply with the .docx.</div>
+
+  <h2>The thing that actually matters: is the text readable?</h2>
+  <p>Here's the part most PDF-vs-Word debates miss. Whether a parser can read your resume has almost nothing to do with the file extension and almost everything to do with the layout inside it. These break parsing in <em>both</em> formats:</p>
+  <ul>
+    <li><strong>Text saved as an image.</strong> A resume "designed" in Canva or Photoshop and exported as a picture has zero readable text. The parser sees a blank page. This is the single most common self-inflicted wound.</li>
+    <li><strong>Tables and text boxes.</strong> Parsers read columns and boxes in an unpredictable order, scrambling your experience into nonsense.</li>
+    <li><strong>Multiple columns.</strong> A two-column layout often gets read straight across, interleaving your skills sidebar into the middle of a job description.</li>
+    <li><strong>Headers and footers.</strong> Contact details tucked into the document header are frequently ignored entirely.</li>
+  </ul>
+  <p>Fix those and either format works. Leave them in and neither does. If you want the full list, see our <a href="../ats-resume-checklist/">ATS resume checklist</a>.</p>
+
+  <h2>How to check your file in 20 seconds</h2>
+  <p>Open your finished resume (PDF or Word) and try to <strong>select the text with your cursor and copy it</strong>. If it highlights and copies as normal, editable text, a parser can read it. If nothing selects — if it behaves like a photo — the file is an image and no ATS will read a word of it, no matter which format you chose. Paste what you copied into a blank document: if it comes out jumbled or out of order, your layout (columns, tables) is the problem, not the file type.</p>
+
+  <a class="cta" href="../../markresume/">
+    <div class="k">Skip the guesswork</div>
+    <div class="t">A resume that's readable by default →</div>
+    <div class="d">MarkResume keeps everything as real text in a parser-safe single-column layout and exports a clean PDF — no tables, no text-in-images, no reflow surprises. Free, private, no sign-up.</div>
+    <span class="go">Open MarkResume →</span>
+  </a>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <h3>Should a resume be a PDF or a Word document?</h3>
+    <p>PDF by default — it locks your layout and modern ATS read it fine. The exception is when a posting or recruiter explicitly asks for a Word (.docx) file, in which case send Word.</p>
+    <h3>Can applicant tracking systems read PDF resumes?</h3>
+    <p>Yes. The "ATS can't read PDFs" warning is outdated. What breaks parsing is the layout — tables, columns, text boxes, or text saved as an image — not the file type. A clean, single-column PDF with real text reads correctly.</p>
+    <h3>When should I send a Word resume instead?</h3>
+    <p>Whenever the application asks for it. Some older systems and recruiting agencies re-format your resume and need an editable file. If a format is named, follow it exactly.</p>
+    <h3>Why does my resume look different after uploading?</h3>
+    <p>Word documents reflow on the reader's machine, so margins and line breaks shift. A PDF renders identically everywhere — the main reason to prefer it unless you're told otherwise.</p>
+  </div>
+
+  <footer>
+    <p>Written by <a href="../../">Labinate</a> — free, privacy-friendly web apps, no sign-up. Try the <a href="../../markresume/">free resume builder</a>, or read the <a href="../ats-resume-checklist/">ATS checklist</a>, <a href="../resume-format-guide/">best resume format</a>, and <a href="../common-resume-mistakes/">common resume mistakes</a> — or browse <a href="../">all guides</a>.</p>
+  </footer>
+</div>
+</body>
+</html>
