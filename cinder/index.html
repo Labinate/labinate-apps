@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinder | Burn After Reading</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: '#09090b',
+              surface: '#18181b',
+              primary: '#f43f5e', // Rose 500
+              primaryHover: '#e11d48', // Rose 600
+              accent: '#06b6d4', // Cyan 500
+            },
+            animation: {
+              'burn-up': 'burnUp 1s ease-out forwards',
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+            },
+            keyframes: {
+              burnUp: {
+                '0%': { opacity: '1', transform: 'scale(1) translateY(0)', filter: 'brightness(1)' },
+                '50%': { opacity: '0.8', transform: 'scale(0.95) translateY(-20px)', filter: 'brightness(1.5) hue-rotate(-20deg)' },
+                '100%': { opacity: '0', transform: 'scale(0.8) translateY(-50px)', filter: 'grayscale(1)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for dark mode aesthetic */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #09090b; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #27272a; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3f3f46; 
+      }
+    </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/labinate-apps/cinder/assets/index-gtJaCQjZ.js"></script>
+</head>
+  <body class="bg-background text-slate-200 antialiased h-screen w-screen overflow-hidden selection:bg-primary selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>

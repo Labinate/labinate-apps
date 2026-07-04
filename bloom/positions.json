@@ -1,0 +1,80 @@
+[
+  {
+    "id": "p1",
+    "name": "The Spoon",
+    "category": "Side",
+    "intensity": "Gentle",
+    "description": "A classic intimacy position focusing on closeness and comfort.",
+    "instructions": [
+      "Both partners lie on their sides facing the same direction.",
+      "One partner stays behind the other, curving around their back.",
+      "Maintain close body contact for maximum intimacy."
+    ],
+    "imageUrl": "https://picsum.photos/400/400?grayscale&blur=2"
+  },
+  {
+    "id": "p2",
+    "name": "The Lotus",
+    "category": "Face to Face",
+    "intensity": "Moderate",
+    "description": "An intimate, face-to-face connection ideal for slow rhythms.",
+    "instructions": [
+      "One partner sits cross-legged (lotus position).",
+      "The other partner sits on their lap, wrapping legs around the waist.",
+      "Wrap arms around each other for stability and closeness."
+    ],
+    "imageUrl": "https://picsum.photos/401/401?grayscale&blur=2"
+  },
+  {
+    "id": "p3",
+    "name": "Standing Ovation",
+    "category": "Standing",
+    "intensity": "Athletic",
+    "description": "Spontaneous and exciting, requiring some balance and strength.",
+    "instructions": [
+      "Both partners stand.",
+      "One partner may lift their leg or be lifted entirely depending on height difference.",
+      "Use a wall or sturdy furniture for support if needed."
+    ],
+    "imageUrl": "https://picsum.photos/402/402?grayscale&blur=2"
+  },
+  {
+    "id": "p4",
+    "name": "Morning Glow",
+    "category": "Rear Entry",
+    "intensity": "Moderate",
+    "description": "A comfortable variation allowing for deep connection.",
+    "instructions": [
+      "One partner lies on their stomach, perhaps with a pillow under hips.",
+      "The other partner approaches from behind/above.",
+      "Allows for relaxed intimacy."
+    ],
+    "imageUrl": "https://picsum.photos/403/403?grayscale&blur=2"
+  },
+  {
+    "id": "p5",
+    "name": "The Bridge",
+    "category": "Oral",
+    "intensity": "Gentle",
+    "description": "Focuses on receiving partner pleasure with comfort.",
+    "instructions": [
+      "Receiving partner lies back comfortably.",
+      "Giving partner positions themselves between the legs.",
+      "Use pillows for neck support."
+    ],
+    "imageUrl": "https://picsum.photos/404/404?grayscale&blur=2"
+  },
+  {
+    "id": "p6",
+    "name": "Cozy Chair",
+    "category": "Face to Face",
+    "intensity": "Gentle",
+    "description": "Utilizing furniture for a relaxed experience.",
+    "instructions": [
+      "One partner sits on a sturdy chair or edge of bed.",
+      "Other partner straddles them facing forward.",
+      "Easy eye contact and kissing."
+    ],
+    "imageUrl": "https://picsum.photos/405/405?grayscale&blur=2"
+  }
+]
