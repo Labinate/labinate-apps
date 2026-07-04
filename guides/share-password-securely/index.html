@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to Share a Password Securely (2026): The Safe Way, and What to Never Do</title>
+<meta name="description" content="The safe way to share a password or secret with someone — why email, Slack and texting are risky, and how one-time encrypted links fix it. Includes a free, zero-backend tool to send a self-destructing secret link.">
+<meta name="keywords" content="how to share a password securely, share a password, send a password safely, secure password sharing, share a secret link, one-time password link, send secret securely, self-destructing note">
+<meta name="theme-color" content="#111827">
+<link rel="canonical" href="https://labinate.github.io/labinate-apps/guides/share-password-securely/">
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Labinate">
+<meta property="og:title" content="How to Share a Password Securely (2026): The Safe Way, and What to Never Do">
+<meta property="og:description" content="Why email, Slack and texting leak your secrets — and how one-time encrypted links fix it. Send a self-destructing secret link free, no sign-up.">
+<meta property="og:url" content="https://labinate.github.io/labinate-apps/guides/share-password-securely/">
+<meta property="og:image" content="https://labinate.github.io/labinate-apps/cinder/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Share a Password Securely (2026): The Safe Way, and What to Never Do">
+<meta name="twitter:description" content="Why email, Slack and texting leak secrets — and how one-time encrypted links fix it. Free, zero-backend secret sharing.">
+<meta name="twitter:image" content="https://labinate.github.io/labinate-apps/cinder/og.png">
+<!-- Structured data: Article -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"How to Share a Password Securely (2026): The Safe Way, and What to Never Do",
+  "description":"The safe way to share a password or secret with someone: why email, Slack and texting are risky, and how one-time encrypted links fix it.",
+  "author":{"@type":"Organization","name":"Labinate"},
+  "publisher":{"@type":"Organization","name":"Labinate","url":"https://labinate.com"},
+  "datePublished":"2026-07-04",
+  "dateModified":"2026-07-04",
+  "mainEntityOfPage":"https://labinate.github.io/labinate-apps/guides/share-password-securely/",
+  "image":"https://labinate.github.io/labinate-apps/cinder/og.png"
+}
+</script>
+<!-- Structured data: Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Labinate","item":"https://labinate.github.io/labinate-apps/"},
+    {"@type":"ListItem","position":2,"name":"Guides","item":"https://labinate.github.io/labinate-apps/guides/"},
+    {"@type":"ListItem","position":3,"name":"How to Share a Password Securely"}
+  ]
+}
+</script>
+<!-- Structured data: HowTo -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"How to share a password securely with a one-time encrypted link",
+  "description":"Send a password or secret so that it is encrypted in transit, readable only once, and leaves no permanent copy behind.",
+  "step":[
+    {"@type":"HowToStep","position":1,"name":"Paste the secret","text":"Open a zero-backend secret-sharing tool and paste the password or secret you need to send."},
+    {"@type":"HowToStep","position":2,"name":"Generate a one-time link","text":"The tool encrypts the secret in your browser and produces a link that decrypts only in the recipient's browser."},
+    {"@type":"HowToStep","position":3,"name":"Send the link over one channel and any password over another","text":"Message the link to your recipient. If the tool adds an extra passphrase, send that by a different channel such as a phone call."},
+    {"@type":"HowToStep","position":4,"name":"It self-destructs after reading","text":"The link works once. After the recipient opens it, the secret is gone and the link is dead — nothing lingers in an inbox or chat history."}
+  ]
+}
+</script>
+<!-- Structured data: FAQ (rich-snippet eligible) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Is it safe to send a password over email or Slack?","acceptedAnswer":{"@type":"Answer","text":"Not really. Email and chat keep a permanent copy of the message in both sides' history, in backups, and often on a company server. Anyone who later gains access to either account — or the server — can read a password you sent months ago. Secrets sent this way live far longer than the moment you needed them."}},
+    {"@type":"Question","name":"What is the safest way to share a password?","acceptedAnswer":{"@type":"Answer","text":"Use a one-time, end-to-end encrypted link that self-destructs after it is read. The secret is encrypted in your browser, can only be opened once, and leaves no lasting copy in any inbox or chat log. For teams, a shared password manager is the best option for credentials you use repeatedly."}},
+    {"@type":"Question","name":"What does end-to-end encrypted and zero-backend mean?","acceptedAnswer":{"@type":"Answer","text":"End-to-end encrypted means only the sender and recipient can read the content — not the service in the middle. Zero-backend means the secret is never stored on a server at all; the encryption key lives in the link itself, so there is no database of secrets that could ever be breached."}},
+    {"@type":"Question","name":"Should I text a password to someone?","acceptedAnswer":{"@type":"Answer","text":"Avoid it for anything sensitive. SMS is unencrypted and sits in both phones' message history indefinitely, and phone backups often sync those messages to the cloud. A self-destructing encrypted link is a much safer default."}}
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#f7f8fa;--panel:#fff;--ink:#0f172a;--muted:#5b6472;--faint:#8b95a5;
+  --line:#e7eaef;--brand:#2563eb;--pill:#eef2f7;--pillink:#475569;
+  --feat-bg:#1a1206;--feat-ink:#f5e6d3;--feat-accent:#fb923c;--ok:#059669;--bad:#dc2626;
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#0b0f17;--panel:#131a26;--ink:#f1f5f9;--muted:#9aa6b6;--faint:#6b7688;
+  --line:#212a38;--brand:#60a5fa;--pill:#1c2635;--pillink:#a9b6c8;--ok:#34d399;--bad:#f87171;
+}}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);
+  margin:0;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 1.2rem}
+a{color:var(--brand)}
+.crumb{font-size:.82rem;color:var(--faint);padding-top:2rem}
+.crumb a{color:var(--faint);text-decoration:none}
+.crumb a:hover{color:var(--brand)}
+header{padding:1rem 0 1.4rem;border-bottom:1px solid var(--line)}
+.brand{font-size:.82rem;letter-spacing:.22em;color:var(--faint);font-weight:700;text-transform:uppercase}
+h1{font-size:2.15rem;line-height:1.12;margin:.6rem 0 .5rem;letter-spacing:-.02em}
+.lead{font-size:1.1rem;color:var(--muted);margin:.4rem 0 0}
+.meta{font-size:.8rem;color:var(--faint);margin-top:.9rem}
+h2{font-size:1.35rem;margin:2.2rem 0 .6rem;letter-spacing:-.01em}
+h3{font-size:1.05rem;margin:1.5rem 0 .3rem}
+p{margin:.7rem 0}
+ul,ol{padding-left:1.25rem}
+li{margin:.35rem 0}
+.no{list-style:none;padding-left:0}
+.no li{position:relative;padding-left:1.9rem;margin:.6rem 0}
+.no li::before{content:"✕";position:absolute;left:0;top:0;color:var(--bad);font-weight:800}
+.yes{list-style:none;padding-left:0}
+.yes li{position:relative;padding-left:1.9rem;margin:.6rem 0}
+.yes li::before{content:"✓";position:absolute;left:0;top:0;color:var(--ok);font-weight:800}
+.cta{display:block;text-decoration:none;background:var(--feat-bg);color:var(--feat-ink);
+  border-radius:16px;padding:1.5rem 1.6rem;margin:1.8rem 0}
+.cta .k{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--feat-accent);font-weight:700}
+.cta .t{font-size:1.28rem;font-weight:700;margin:.35rem 0 .2rem;color:#fff}
+.cta .d{font-size:.98rem;color:var(--feat-ink);opacity:.9}
+.cta .go{display:inline-block;margin-top:.9rem;font-size:.9rem;font-weight:700;color:#fff;
+  background:var(--feat-accent);border-radius:999px;padding:.55rem 1.1rem}
+.callout{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem;margin:1.3rem 0}
+.callout strong{color:var(--ink)}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.94rem}
+th,td{text-align:left;padding:.55rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--faint);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.faq h3{margin-top:1.4rem}
+footer{border-top:1px solid var(--line);margin-top:2.6rem;padding:1.6rem 0 3rem;font-size:.85rem;color:var(--faint)}
+footer a{color:var(--faint)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="crumb"><a href="../../">Labinate</a> › <a href="../">Guides</a> › How to Share a Password Securely</nav>
+  <header>
+    <div class="brand">Labinate · Privacy Guides</div>
+    <h1>How to share a password securely — the safe way, and what to never do</h1>
+    <p class="lead">You need to send a colleague the Wi-Fi password, a client the login, a family member a code. The obvious ways — email, Slack, a text — quietly leave that secret sitting in a dozen places forever. Here's the safe way instead.</p>
+    <div class="meta">Updated July 2026 · ~5 min read · by Labinate</div>
+  </header>
+
+  <p>The problem with sharing a password isn't the sending — it's the <strong>lingering</strong>. When you paste a password into email or a chat app, that message doesn't disappear when it's read. It stays in your Sent folder, the recipient's inbox, both sides' backups, and often a company server. A secret you needed for thirty seconds can survive for years, waiting for the day one of those accounts is compromised.</p>
+  <p>The fix is simple: make the secret readable <strong>once</strong>, encrypt it so no server can see it, and leave <strong>no permanent copy</strong> behind.</p>
+
+  <a class="cta" href="../../cinder/">
+    <div class="k">Free tool · no sign-up · zero backend</div>
+    <div class="t">Send a self-destructing secret link</div>
+    <div class="d">Cinder encrypts your secret in your browser and gives you a one-time link that burns after reading. Nothing is ever stored on a server — the key lives in the link, so there's no database of secrets to breach. Free, private, no account.</div>
+    <span class="go">Open Cinder →</span>
+  </a>
+
+  <h2>What not to do</h2>
+  <ul class="no">
+    <li><strong>Don't email it.</strong> Email is stored in plaintext on servers and in backups on both ends. It's the single most common way credentials leak long after they were sent.</li>
+    <li><strong>Don't post it in Slack, Teams or Discord.</strong> Chat history is searchable forever and often retained by the company. "I'll delete it after" almost never happens — and deletion doesn't touch backups.</li>
+    <li><strong>Don't text it.</strong> SMS is unencrypted and syncs to phone-cloud backups. A stolen or resold phone hands over the whole message history.</li>
+    <li><strong>Don't put it in a shared doc or spreadsheet.</strong> Access sprawls over time; six months later nobody remembers who can open that sheet.</li>
+    <li><strong>Don't reuse the same password across the people you share with.</strong> One leak then unlocks everything.</li>
+  </ul>
+
+  <h2>What to do instead</h2>
+  <ul class="yes">
+    <li><strong>Use a one-time, end-to-end encrypted link.</strong> The secret is encrypted in your browser, opens once, and self-destructs. There's no inbox copy to leak later.</li>
+    <li><strong>Split the channels for high-stakes secrets.</strong> Send the link one way (e.g. Slack) and any extra passphrase another (e.g. a quick call), so no single compromised channel reveals everything.</li>
+    <li><strong>For credentials you share repeatedly, use a team password manager.</strong> One-time links are perfect for a hand-off; a manager is better for a login five people need every day.</li>
+    <li><strong>Rotate after sharing anything sensitive.</strong> Once a secret has travelled, treat it as slightly exposed and change it on a sensible schedule.</li>
+    <li><strong>Prefer zero-backend tools.</strong> If the service never stores the secret at all, there is literally no database that can be breached.</li>
+  </ul>
+
+  <h2>Why one-time encrypted links are safer</h2>
+  <table>
+    <tr><th>Method</th><th>Encrypted?</th><th>Leaves a lasting copy?</th></tr>
+    <tr><td>Email / Slack / SMS</td><td>Usually in transit only</td><td>Yes — inboxes, chat logs, backups</td></tr>
+    <tr><td>Shared doc / spreadsheet</td><td>At rest on a server</td><td>Yes — and access sprawls over time</td></tr>
+    <tr><td>Team password manager</td><td>End-to-end</td><td>Stored, but controlled &amp; auditable</td></tr>
+    <tr><td>One-time self-destructing link</td><td>End-to-end, in your browser</td><td>No — reads once, then it's gone</td></tr>
+  </table>
+
+  <div class="callout">
+    <strong>The key idea.</strong> A well-built one-time link puts the decryption key <em>in the link itself</em> (after the <code>#</code>, which browsers never send to a server). The service can store — or not store — an encrypted blob it can't read. When the tool is "zero-backend," even that blob never touches a server: the whole secret rides inside the link and vanishes on first open.</div>
+
+  <a class="cta" href="../../cinder/">
+    <div class="k">Do it now</div>
+    <div class="t">Create a burn-after-reading link →</div>
+    <div class="d">Paste your secret into Cinder, get a one-time encrypted link, and send it. It works across any device, stores nothing, and self-destructs the moment it's read. Free, no sign-up.</div>
+    <span class="go">Open Cinder →</span>
+  </a>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <h3>Is it safe to send a password over email or Slack?</h3>
+    <p>Not really. Email and chat keep a permanent copy in both sides' history, in backups, and often on a company server. Anyone who later gains access to either account — or the server — can read a password you sent months ago.</p>
+    <h3>What is the safest way to share a password?</h3>
+    <p>Use a one-time, end-to-end encrypted link that self-destructs after it's read. The secret is encrypted in your browser, opens only once, and leaves no lasting copy. For credentials you share repeatedly, a team password manager is best.</p>
+    <h3>What do "end-to-end encrypted" and "zero-backend" mean?</h3>
+    <p>End-to-end encrypted means only the sender and recipient can read the content — not the service in the middle. Zero-backend means the secret is never stored on a server at all; the key lives in the link, so there's no database of secrets to breach.</p>
+    <h3>Should I text a password to someone?</h3>
+    <p>Avoid it for anything sensitive. SMS is unencrypted and sits in both phones' history indefinitely, and phone backups often sync those messages to the cloud. A self-destructing encrypted link is a much safer default.</p>
+  </div>
+
+  <footer>
+    <p>Written by <a href="../../">Labinate</a> — free, privacy-friendly web apps, no sign-up. Try <a href="../../cinder/">Cinder</a> for secret sharing, or browse <a href="../">all guides</a>.</p>
+  </footer>
+</div>
+</body>
+</html>
