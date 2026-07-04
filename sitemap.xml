@@ -73,6 +73,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://labinate.github.io/labinate-apps/guides/resume-format-guide/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://labinate.github.io/labinate-apps/guides/quantify-resume-achievements/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://labinate.github.io/labinate-apps/uefa/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
