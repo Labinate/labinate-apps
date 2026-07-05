@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Does an ATS Work? (2026): What Applicant Tracking Systems Actually Do</title>
+<meta name="description" content="A plain-English explanation of how an applicant tracking system (ATS) parses, stores, searches, and ranks your resume — what really happens after you hit apply, the myths to ignore, and how to format so the software reads you correctly. With a free resume builder.">
+<meta name="keywords" content="how does an ats work, applicant tracking system, ats resume, how ats parses resume, ats scan, do recruiters use ats, ats keywords, ats-friendly resume">
+<meta name="theme-color" content="#111827">
+<link rel="canonical" href="https://labinate.github.io/labinate-apps/guides/how-does-an-ats-work/">
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Labinate">
+<meta property="og:title" content="How Does an ATS Work? What Applicant Tracking Systems Actually Do">
+<meta property="og:description" content="An ATS doesn't 'reject' your resume with a secret score. Here's what the software really does — parse, store, search, rank — and how to format so it reads you correctly.">
+<meta property="og:url" content="https://labinate.github.io/labinate-apps/guides/how-does-an-ats-work/">
+<meta property="og:image" content="https://labinate.github.io/labinate-apps/markresume/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Does an ATS Work? What the Software Actually Does">
+<meta name="twitter:description" content="Parse, store, search, rank — the four things an applicant tracking system actually does, minus the myths, plus how to format so it reads you right.">
+<meta name="twitter:image" content="https://labinate.github.io/labinate-apps/markresume/og.png">
+<!-- Structured data: Article -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"How Does an ATS Work? What Applicant Tracking Systems Actually Do",
+  "description":"A plain-English explanation of how an applicant tracking system parses, stores, searches, and ranks a resume — what happens after you apply, the myths to ignore, and how to format so the software reads you correctly.",
+  "author":{"@type":"Organization","name":"Labinate"},
+  "publisher":{"@type":"Organization","name":"Labinate","url":"https://labinate.com"},
+  "datePublished":"2026-07-05",
+  "dateModified":"2026-07-05",
+  "mainEntityOfPage":"https://labinate.github.io/labinate-apps/guides/how-does-an-ats-work/",
+  "image":"https://labinate.github.io/labinate-apps/markresume/og.png"
+}
+</script>
+<!-- Structured data: Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Labinate","item":"https://labinate.github.io/labinate-apps/"},
+    {"@type":"ListItem","position":2,"name":"Guides","item":"https://labinate.github.io/labinate-apps/guides/"},
+    {"@type":"ListItem","position":3,"name":"How Does an ATS Work"}
+  ]
+}
+</script>
+<!-- Structured data: FAQ (rich-snippet eligible) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How does an applicant tracking system work?","acceptedAnswer":{"@type":"Answer","text":"An applicant tracking system (ATS) is database software that recruiters use to manage job applications. When you apply, it does four things: it parses your resume into structured fields (name, jobs, dates, skills), stores that data in a searchable database, lets recruiters search and filter that database by keyword, and displays candidates — sometimes with a match score against the job. It is a filing and search tool, not an AI judge that auto-rejects you. A human still reads the resumes that surface in a search."}},
+    {"@type":"Question","name":"Does an ATS automatically reject resumes?","acceptedAnswer":{"@type":"Answer","text":"Almost never automatically. The common belief that an ATS scores your resume and rejects it below a threshold is mostly a myth. What actually filters you out is either a knockout question you answered (for example, 'Are you authorized to work here?') or, more often, a recruiter searching the database for specific keywords and simply never seeing resumes that don't match. You aren't rejected by a robot; you're overlooked because the software couldn't read or match your resume. Good formatting and relevant keywords fix that."}},
+    {"@type":"Question","name":"How do I make my resume ATS-friendly?","acceptedAnswer":{"@type":"Answer","text":"Use a single-column layout in a standard font, with standard section headings (Experience, Education, Skills) so the parser maps your content correctly. Save as a text-based PDF or .docx, never an image or scan. Put important keywords from the job description in your actual bullet points, not hidden or stuffed. Avoid tables, text boxes, headers/footers, and graphics for anything the parser needs to read. A clean, one-column resume built for people is also the one machines read best."}},
+    {"@type":"Question","name":"Do all companies use an ATS?","acceptedAnswer":{"@type":"Answer","text":"Most medium and large companies do — the large majority of big employers run one — because at scale they need a database to manage thousands of applicants. Very small companies and some direct or referral hires may not. But formatting for an ATS costs you nothing with a human reader: a clean, parser-safe resume reads well either way, so it's always the safe default to assume one is in the pipeline."}}
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#f7f8fa;--panel:#fff;--ink:#0f172a;--muted:#5b6472;--faint:#8b95a5;
+  --line:#e7eaef;--brand:#2563eb;--pill:#eef2f7;--pillink:#475569;
+  --feat-bg:#0f172a;--feat-ink:#e2e8f0;--feat-accent:#34d399;--ok:#059669;
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#0b0f17;--panel:#131a26;--ink:#f1f5f9;--muted:#9aa6b6;--faint:#6b7688;
+  --line:#212a38;--brand:#60a5fa;--pill:#1c2635;--pillink:#a9b6c8;--ok:#34d399;
+}}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);
+  margin:0;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 1.2rem}
+a{color:var(--brand)}
+.crumb{font-size:.82rem;color:var(--faint);padding-top:2rem}
+.crumb a{color:var(--faint);text-decoration:none}
+.crumb a:hover{color:var(--brand)}
+header{padding:1rem 0 1.4rem;border-bottom:1px solid var(--line)}
+.brand{font-size:.82rem;letter-spacing:.22em;color:var(--faint);font-weight:700;text-transform:uppercase}
+h1{font-size:2.15rem;line-height:1.12;margin:.6rem 0 .5rem;letter-spacing:-.02em}
+.lead{font-size:1.1rem;color:var(--muted);margin:.4rem 0 0}
+.meta{font-size:.8rem;color:var(--faint);margin-top:.9rem}
+h2{font-size:1.35rem;margin:2.2rem 0 .6rem;letter-spacing:-.01em}
+h3{font-size:1.05rem;margin:1.5rem 0 .3rem}
+p{margin:.7rem 0}
+ul,ol{padding-left:1.25rem}
+li{margin:.35rem 0}
+.grp{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--brand);
+  border-radius:10px;padding:.9rem 1.1rem;margin:.9rem 0}
+.grp .role{font-size:.9rem;color:var(--ink);font-weight:700;margin-bottom:.2rem}
+.grp p{margin:.2rem 0;color:var(--muted)}
+.grp .fix{color:var(--ok);font-weight:600}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:.9rem 1.1rem;margin:.9rem 0}
+.step .n{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);font-weight:700}
+.step .h{font-weight:700;margin:.15rem 0 .25rem}
+.step p{margin:.2rem 0;color:var(--muted)}
+.cta{display:block;text-decoration:none;background:var(--feat-bg);color:var(--feat-ink);
+  border-radius:16px;padding:1.5rem 1.6rem;margin:1.8rem 0}
+.cta .k{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--feat-accent);font-weight:700}
+.cta .t{font-size:1.28rem;font-weight:700;margin:.35rem 0 .2rem;color:#fff}
+.cta .d{font-size:.98rem;color:var(--feat-ink);opacity:.85}
+.cta .go{display:inline-block;margin-top:.9rem;font-size:.9rem;font-weight:700;color:#fff;
+  background:var(--brand);border-radius:999px;padding:.55rem 1.1rem}
+.callout{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem;margin:1.3rem 0}
+.callout strong{color:var(--ink)}
+.faq h3{margin-top:1.4rem}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.95rem}
+th,td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);font-weight:700}
+td.b{color:#b91c1c}
+td.g{color:var(--ok);font-weight:600}
+@media(prefers-color-scheme:dark){td.b{color:#f87171}}
+footer{border-top:1px solid var(--line);margin-top:2.6rem;padding:1.6rem 0 3rem;font-size:.85rem;color:var(--faint)}
+footer a{color:var(--faint)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="crumb"><a href="../../">Labinate</a> › <a href="../">Guides</a> › How Does an ATS Work</nav>
+  <header>
+    <div class="brand">Labinate · Resume Guides</div>
+    <h1>How does an ATS work?</h1>
+    <p class="lead">You hit "apply," and your resume disappears into something called an applicant tracking system. The internet is full of scary claims about it — that a robot scores you, that 75% of resumes are auto-rejected, that one wrong keyword sinks you. Most of that is wrong. Here's what an ATS actually is, the four things it really does with your resume, and how to format so the software reads you correctly instead of garbling you.</p>
+    <div class="meta">Updated July 2026 · ~6 min read · by Labinate</div>
+  </header>
+
+  <p>An <strong>applicant tracking system (ATS)</strong> is database software that companies use to collect and manage job applications. Think of it as a CRM for candidates: it's where recruiters keep every applicant, search through them, and move people along the hiring pipeline. It is not, for the most part, an AI that judges your worth and deletes you. Understanding the difference is what turns a resume from "invisible" to "found."</p>
+
+  <a class="cta" href="../../markresume/">
+    <div class="k">Free tool · no sign-up</div>
+    <div class="t">Build a resume the ATS reads cleanly</div>
+    <div class="d">MarkResume produces a single-column, standard-heading, parser-safe layout with a live preview and one-click PDF — the exact format an ATS maps correctly. Free, private, no account.</div>
+    <span class="go">Open MarkResume →</span>
+  </a>
+
+  <h2>The four things an ATS actually does</h2>
+  <p>Whatever the brand — Workday, Greenhouse, Lever, Taleo, iCIMS — the core job is the same. Here's the real lifecycle of your resume after you apply.</p>
+
+  <div class="step">
+    <div class="n">Step 1</div>
+    <div class="h">Parse — it reads your file into fields</div>
+    <p>The moment you upload, the ATS tries to break your resume into structured data: name, contact info, each job title, employer, dates, and skills. This is where formatting matters most. If your resume is a clean, single-column document with standard headings, the parser maps everything correctly. If it's a two-column design, a table, or a scanned image, the parser can scramble your work history — putting your dates in the wrong field or losing a job entirely.</p>
+  </div>
+  <div class="step">
+    <div class="n">Step 2</div>
+    <div class="h">Store — your data goes into a searchable database</div>
+    <p>The parsed fields are saved as a candidate profile. Your original file is kept too, but the <em>searchable</em> version is the parsed text. This is why a resume that looked perfect to your eye can still fail: if the parser couldn't read a section, that content simply isn't in the database to be found.</p>
+  </div>
+  <div class="step">
+    <div class="n">Step 3</div>
+    <div class="h">Search — a recruiter queries the database by keyword</div>
+    <p>This is the real "filter," and it's a human doing it. A recruiter with 400 applicants doesn't read 400 resumes; they search the database for the terms that matter — "registered nurse," "Python," "CPA," a specific city. Candidates whose parsed resume contains those terms surface; those who used different wording, or whose text didn't parse, don't. You aren't rejected — you're never retrieved.</p>
+  </div>
+  <div class="step">
+    <div class="n">Step 4</div>
+    <div class="h">Rank — some systems show a match score</div>
+    <p>Some (not all) ATS platforms show recruiters a rough match percentage between a resume and the job description. It's a convenience for sorting, not an automatic gate — the recruiter decides who to read. A few systems also apply <strong>knockout questions</strong> you answered in the application ("Do you have a valid license?") that can filter you before a human looks. Those are answers you gave, not a secret judgment of your resume.</p>
+  </div>
+
+  <h2>The myth vs. the reality</h2>
+  <table>
+    <tr><th>The myth</th><th>What actually happens</th></tr>
+    <tr><td class="b">A robot scores my resume and rejects it</td><td class="g">A recruiter searches a database; unmatched resumes are just never seen</td></tr>
+    <tr><td class="b">75% of resumes are auto-deleted by the ATS</td><td class="g">That stat is unsourced folklore; most systems delete nothing automatically</td></tr>
+    <tr><td class="b">I need to stuff keywords to beat the bot</td><td class="g">Keyword stuffing is obvious to the human who reads the shortlist; use real terms in real bullets</td></tr>
+    <tr><td class="b">White-text hidden keywords trick the ATS</td><td class="g">Recruiters see the rendered resume; it reads as deception and gets you cut</td></tr>
+  </table>
+  <p>The takeaway: the ATS isn't your adversary. Bad formatting and vague wording are. Fix those two things and the software works <em>for</em> you.</p>
+
+  <h2>How to format so the ATS reads you correctly</h2>
+  <p>Everything that helps a parser also helps the human who reads you later. There's no trade-off.</p>
+  <ul>
+    <li><strong>One column.</strong> Multi-column and table layouts are the single biggest cause of scrambled parsing. Keep the whole resume in a single flowing column.</li>
+    <li><strong>Standard section headings.</strong> Use "Work Experience," "Education," "Skills" — not clever labels like "Where I've Made an Impact." The parser looks for the standard ones.</li>
+    <li><strong>A text-based PDF or .docx.</strong> Never a scanned image or a screenshot — the parser can't read pixels. Export real, selectable text.</li>
+    <li><strong>Real keywords in real bullets.</strong> Mirror the exact terms from the <a href="../tailor-resume-to-job-description/">job description</a> where they honestly apply. Say "Managed Google Ads campaigns," not "handled digital marketing," if the job asks for Google Ads.</li>
+    <li><strong>No critical text in headers, footers, or graphics.</strong> Many parsers ignore the header/footer region; keep your name and contact info in the body.</li>
+    <li><strong>Standard fonts, simple bullets.</strong> Skip icons, symbols, and decorative characters that a parser may drop or mangle.</li>
+  </ul>
+
+  <div class="callout"><strong>The one-line rule:</strong> a resume built to be read clearly by a busy person is automatically the one an ATS parses best. You don't format for the machine and the human separately — clean, single-column, keyword-honest wins both. If you want to <a href="../ats-resume-checker/">check whether your resume is ATS-friendly</a>, the fastest test is whether you can copy-paste it into plain text and still read every section in order.</div>
+
+  <a class="cta" href="../../markresume/">
+    <div class="k">Build it in minutes</div>
+    <div class="t">A resume the parser gets right the first time →</div>
+    <div class="d">MarkResume lays out experience, skills, and projects in a single-column, ATS-safe format with a live preview and one-click PDF export — no tables, no text boxes, nothing to confuse a parser. Free, no sign-up, nothing to install.</div>
+    <span class="go">Open MarkResume →</span>
+  </a>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <h3>How does an applicant tracking system work?</h3>
+    <p>An ATS is database software recruiters use to manage applications. When you apply it parses your resume into fields, stores that data in a searchable database, lets recruiters search and filter it by keyword, and sometimes shows a match score. It's a filing and search tool, not an AI judge — a human still reads the resumes a search surfaces.</p>
+    <h3>Does an ATS automatically reject resumes?</h3>
+    <p>Almost never. What filters you is usually a knockout question you answered, or a recruiter searching for keywords and never seeing resumes that don't match or didn't parse. You're overlooked, not robot-rejected — and clean formatting plus relevant keywords fixes it.</p>
+    <h3>How do I make my resume ATS-friendly?</h3>
+    <p>Single column, standard font, standard section headings, saved as a text-based PDF or .docx (never an image). Put real keywords from the job into your actual bullets, and avoid tables, text boxes, and header/footer text for anything the parser must read.</p>
+    <h3>Do all companies use an ATS?</h3>
+    <p>Most medium and large ones do; very small or referral hires may not. But a parser-safe resume also reads well to a human, so assume one's in the pipeline — it costs you nothing and protects you either way.</p>
+  </div>
+
+  <footer>
+    <p>Written by <a href="../../">Labinate</a> — free, privacy-friendly web apps, no sign-up. Try the <a href="../../markresume/">free resume builder</a>, or read the <a href="../ats-resume-checklist/">ATS resume checklist</a>, <a href="../ats-resume-checker/">how to check if your resume is ATS-friendly</a>, <a href="../resume-keywords/">resume keywords</a>, and <a href="../resume-format-guide/">the best resume format</a> — or browse <a href="../">all guides</a>.</p>
+  </footer>
+</div>
+</body>
+</html>
